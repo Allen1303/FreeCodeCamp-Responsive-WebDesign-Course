@@ -1,0 +1,84 @@
+.frame {
+    /* Sets the border width, style, and color */
+    border: 50px solid rgb(27, 1, 1);
+    /* Sets the width of the element */
+    width: 500px;
+    /* Sets the padding inside the element */
+    padding: 50px;
+    /* Sets the margin around the element */
+    margin: 20px auto;
+}
+
+.canvas {
+    /* Sets the width of the element */
+    width: 500px;
+    /* Sets the height of the element */
+    height: 600px;
+    /* Sets the background color of the element */
+    background-color: #4d0f00;
+    /* Hides any content that overflows the element */
+    overflow: hidden;
+    /* Applies a blur effect to the element */
+    filter: blur(2px);
+}
+
+.one {
+    /* Sets the width of the element */
+    width: 425px;
+    /* Sets the height of the element */
+    height: 150px;
+    /* Sets the background color of the element */
+    background-color: #efb762;
+    /* Sets the margin around the element */
+    margin: 20px auto;
+    /* Adds a shadow effect to the element */
+    box-shadow: 0 0 3px 3px #efb762;
+    /* Sets the border radius of the element */
+    border-radius: 9px;
+    /* Applies a rotation transformation to the element */
+    transform: rotate(-0.6deg);
+}
+
+.two {
+    /* Sets the width of the element */
+    width: 475px;
+    /* Sets the height of the element */
+    height: 200px;
+    /* Sets the background color of the element */
+    background-color: #8f0401;
+    /* Sets the margin around the element */
+    margin: 0 auto;
+    /* Sets the margin at the bottom of the element */
+    margin-bottom: 20px;
+    /* Adds a shadow effect to the element */
+    box-shadow: 0 0 3px 3px #8f0401;
+    /* Sets the border radius of the element */
+    border-radius: 8px 10px;
+    /* Applies a rotation transformation to the element */
+    transform: rotate(0.4deg);
+}
+
+.three {
+    /* Sets the width of the element */
+    width: 91%;
+    /* Sets the height of the element */
+    height: 28%;
+    /* Sets the background color of the element */
+    background-color: #b20403;
+    /* Sets the margin around the element */
+    margin: auto;
+    /* Applies a blur effect to the element */
+    filter: blur(2px);
+    /* Adds a shadow effect to the element */
+    box-shadow: 0 0 5px 5px #b20403;
+    /* Sets the border radius of the element */
+    border-radius: 30px 25px 60px 12px;
+    /* Applies a rotation transformation to the element */
+    transform: rotate(-0.2deg);
+}
+
+.one,
+.two {
+    /* Applies a blur effect to the elements */
+    filter: blur(1px);
+}

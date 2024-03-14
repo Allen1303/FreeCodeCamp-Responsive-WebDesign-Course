@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic); /* Global styles */
+body {
+  font-size: 16;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: whitesmoke;
+  background-image: url(images/gym-image.jpg);
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent background image from repeating */
+  
+}
+
+/* Label styles */
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+/* Heading and paragraph styles */
+h1,
+p {
+  font-family: "Quicksand", sans-serif;
+  margin: 1em auto;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  /* font-weight: 300; */
+  font-style: italic;
+  color: #dfdcdc;
+  border: 1px solid#563d7c;
+  max-width: 500px;
+  min-width: 300px;
+  width: 80%;
+  padding: 1em;
+  border-radius:  20px;
+  background-color: #563d7c;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #563d7c;
+  text-shadow: 1px 1px 0 #eae7e7, 2px 2px 0 #e1dddd, 3px 3px 0 #dfdcdc, 4px 4px 0 #e3e0e0, 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+form {
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  font-size: 18px;
+  font-weight: 450;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  min-width: 300px;
+  width: 80%;
+  padding: 1em;
+  /* padding-bottom: 2em; */
+  background-color: #563d7c;
+  border: none;
+  /* padding-left: 2em;
+  padding-right: 2em; */
+  border-radius: 20px;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+}
+fieldset {
+  border: none;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 3px solid whitesmoke;
+}
+fieldset:last-of-type {
+  border-bottom: none;
+}
+input,
+textarea select {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  border-color: #563d7c;
+  border-radius: 6.5px;
+  min-height: 2em;
+}
+#dropdown {
+  width: 45%;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  border: 1px solid #563d7c;
+  border-radius: 10px;
+}
+
+.inline {
+  width: unset;
+  margin-right: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  vertical-align: middle;
+}
+input,
+textarea {
+  background-color: whitesmoke;
+  border: 1px solid #563d7c;
+  border-radius: 10px;
+}
+input[type="submit"] {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: whitesmoke;
+  border-color: #563d7c;
+  color: #563d7c;
+  font-weight: bold;
+  min-width: 300px;
+  height: 2em;
+  cursor: pointer;
+  box-shadow: 0 8px 10px rgba(68, 66, 66, 0.5);
+}
+/* Media query for smaller screens */
+@media screen and(max-width:600px) {
+  form {
+    width: 90%; /* Further reduce width for smaller screens */
+  }
+}
+input[type="submit"]:hover {
+  background-color: #a77aea;
+  color: whitesmoke;
+}
+input[type="radio"],
+[type="checkbox"] {
+  font-size: 30px;
+  transform: scale(1.4); /* Increase the size of the radio buttons */
+  margin-right: 5px; /* Add some spacing between the radio buttons and the labels */
+}
+span {
+  font-size: 20px;
+}

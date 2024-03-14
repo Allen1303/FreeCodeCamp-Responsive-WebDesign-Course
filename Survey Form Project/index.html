@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/google-forms.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Workout Survey</h1>
+    <p id="description">Your survey helps us support your fitness goals.</p>
+    <form action="" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label"> Name: <input type="text" name="" id="name" placeholder="Enter your name" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="email" id="email-label">Email: <input type="email" name="" id="email" placeholder="Provide valid email" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="number" id="number-label">Age Group: <input type="number" min="13" max="100" id="number" placeholder="age" /></label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdowm-options">
+          Experience Level:
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advance</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend><span>How often do you workout?</span></legend>
+        <label for="workout-frequency-1"> <input id="workout-frequency-1" class="inline" type="radio" value="1" name="workout-days" /> Everyday</label>
+        <label for="workout-frequency-2"><input id="workout-frequency-2" class="inline" type="radio" value="2" name="workout-days" /> 5 - 6 days per week</label>
+        <label for="workout-frequency-3"><input id="workout-frequency-3" class="inline" type="radio" value="3" name="workout-days" class="inline" /> 3 days per week</label>
+      </fieldset>
+
+      <fieldset>
+        <legend><span>What style of workout do you like?</span></legend>
+        <label for="workout-style"> <input id="workout-style" type="checkbox" class="inline" value="option 1" /> Full body</label>
+        <label for="workout-style"> <input id="workout-style" type="checkbox" class="inline" value="option 2" /> Push pull legs</label>
+        <label for="workout-style"> <input id="workout-style" type="checkbox" class="inline" value="option 3" /> 1 - 2 body part per-day (Bro split)</label>
+      </fieldset>
+
+      <fieldset>
+        <label for=""><span>Enter additional comments </span><br><br><textarea name="" id="" rows="8" cols="58"></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
