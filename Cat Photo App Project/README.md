@@ -1,3 +1,4 @@
+![Cat Photo App Project](cat_photoapp_image.png)
 # CAT PHOTO APP
 
 ## Learning Objectives for Beginners
