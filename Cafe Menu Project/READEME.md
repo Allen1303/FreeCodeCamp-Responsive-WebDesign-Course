@@ -1,3 +1,4 @@
+![Cafe Menu Project](cafe_menu_image.png)
 # Cafe Menu Styling
 
 This `README` explains the effect of each styling added to the Cafe Menu web page and highlights the skills one would learn from using these style properties.
