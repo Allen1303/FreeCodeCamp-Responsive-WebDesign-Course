@@ -1,3 +1,4 @@
+![Survey Form Project](survey_form_image.png)
 # Workout Survey Form
 This project is a simple survey form designed for collecting information about users' workout preferences. The form is created using `HTML` for the structure and CSS for styling. This README.md file provides a detailed walkthrough of the project, including key sections of the `HTML` and CSS code.
 

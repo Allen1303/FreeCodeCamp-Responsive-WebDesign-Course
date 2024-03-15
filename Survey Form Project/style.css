@@ -10,6 +10,7 @@ body {
   background-size: cover; /* Ensure the background image covers the entire container */
   background-position: center; /* Center the background image */
   background-repeat: no-repeat; /* Prevent background image from repeating */
+
   
 }
 
@@ -64,6 +65,7 @@ form {
   padding-right: 2em; */
   border-radius: 20px;
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 fieldset {
   border: none;
@@ -79,7 +81,7 @@ fieldset:last-of-type {
 }
 input,
 textarea select {
-  width: 100%;
+  width: 80%;
   margin-top: 10px;
   margin-bottom: 1em;
   margin-left: 0;
@@ -109,6 +111,7 @@ textarea {
   background-color: whitesmoke;
   border: 1px solid #563d7c;
   border-radius: 10px;
+  width: 100%;
 }
 input[type="submit"] {
   display: block;
