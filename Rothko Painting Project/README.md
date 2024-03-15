@@ -1,3 +1,4 @@
+![Rothko Painting Project](rothko_painting_image.png)
 # Rothko Painting Project
 Welcome to the Rothko Painting project! This` README.md` file will guide you through the entire project, providing detailed explanations of the HTML and CSS code used. By the end of this walkthrough, you'll have a clear understanding of how to create this artistic representation using basic HTML and CSS.
 
