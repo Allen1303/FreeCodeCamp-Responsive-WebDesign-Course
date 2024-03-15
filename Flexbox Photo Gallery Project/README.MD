@@ -1,3 +1,4 @@
+![Flexbox Photo Gallarey Project](flexbox_photo_gallery_image.png)
 # FlexBox Photo Gallery Project
 Welcome to the `FlexBox` Photo Gallery project! In this walkthrough, we'll explore the concept of `FlexBox` in CSS and how it's applied to create a responsive `photo gallery`. This project is beginner-friendly, and we'll guide you through the `HTML` markup and `CSS styles` used.
 
