@@ -1,3 +1,4 @@
+![Registration Form Project](registration_form_image.png)
 # Registration Form Project
 This is a simple registration form project built using HTML and CSS. The form collects user information, including personal details, account type, profile picture, age, referral source, and a bio. The form also includes terms and conditions that must be accepted by the user.
 
