@@ -1,4 +1,4 @@
-![Accessibility Quiz Project](accessibility_quiz_app.png)
+![Accessibility Quiz Project](quiz_app_image.png)
 # Building FreeCodeCamp Accessibility Quiz App
 This guide explores the HTML, CSS, and accessibility features used to create a simple quiz application. We'll focus on the most important aspects you learned while building this project.
 
@@ -37,7 +37,7 @@ Headings (`h1 to h6`) structure the content and help users understand the inform
 ```
 
 ### Form Accessibility: 
-The form> element groups form fields `input, select, textarea). Labels` `(label)` are associated with each field using the for attribute for screen readers.
+The form element groups form fields `input, select, textarea). Labels` `(label)` are associated with each field using the for attribute for screen readers.
 
 ```html
 <label for="name">Name:</label>

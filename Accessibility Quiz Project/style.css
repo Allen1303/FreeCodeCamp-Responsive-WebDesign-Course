@@ -72,7 +72,7 @@ p::before {
 li > a {
   color: inherit;
   text-decoration: none;
-  padding-right:20px;
+  padding-right: 20px;
 }
 nav li:hover {
   color: #1b1b32;
@@ -105,6 +105,7 @@ input {
 .info input {
   width: 50%;
   text-align: left;
+  border-radius: 5px;
 }
 .info label {
   width: 10%;
@@ -141,11 +142,21 @@ ul {
 button {
   display: block;
   margin: 40px auto;
-  width: 40%;
-  padding: 15px;
+  width: 20%;
+  padding: 8px;
   font-size: 23px;
-  background: #d0d0d5;
+  background: #f1be32;
   border: 3px solid #3b3b4f;
+  border-radius: 15px;
+}
+button:hover {
+  background: #3b3b4f;
+  color: #f1be32;
+  cursor: pointer;
+}
+#text-response {
+  border-color:1px solid #3b3b4f;
+  border-radius: 10px;
 }
 footer {
   background-color: #2a2a40;
