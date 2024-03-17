@@ -119,3 +119,24 @@ By building this tribute page, you've gained valuable experience in fundamental 
 
 ## Acknowledgement
 This project is built upon the guidance provided by `FreeCodeCamp`. Their challenges and resources offer valuable learning opportunities for aspiring web developers.
+
+
+
+## Text Shadow Effect
+```css
+text-shadow: 1px 2px 3px rgba(0.4, 0.5, 0.6, 0.7);
+```
+`text-shadow:` This tells the browser we're applying a shadow effect to the text.
+Numbers (1, 2px, 3px): These define the position of the shadow relative to the original text.
+
+`The first number (1)` represents the horizontal offset of the shadow. A positive value moves the shadow to the right, and a negative value moves it to the left. In this case, the shadow is shifted slightly to the right `(1 pixel)`.
+
+`The second number (2px)` represents the vertical offset of the shadow. A positive value moves the shadow down, and a negative value moves it up. Here, the shadow is shifted slightly down `(2 pixels)`.
+`The third number (3px)` defines the blur radius of the shadow. A higher value creates a softer, more blurry shadow, while a lower value creates a sharper shadow. This code sets a blur radius of `3 pixels`.
+
+`rgba(0.4, 0.5, 0.6, 0.7):` This defines the color and opacity of the shadow.
+rgba stands for` red, green, blue, alpha.`
+The numbers within the parenthesis specify the amount of` red (0.4)`, `green (0.5)`, and `blue (0.6)` used to create the shadow color (a grayish tone in this case).
+
+`The last number (0.7)` represents the opacity of the shadow. A value of 0 indicates complete transparency (invisible shadow), and 1 indicates full opacity (solid shadow). Here, the opacity is set to` 0.7`, creating a partially transparent shadow with `70% opacity`.
+In summary, this code creates a slightly offset, slightly blurred grayish shadow behind the text with `70% opacity`, giving it a more three-dimensional appearance.
