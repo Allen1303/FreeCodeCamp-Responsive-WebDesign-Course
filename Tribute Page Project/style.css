@@ -62,8 +62,7 @@ hr {
   place-items: center;
 }
 #kobe-bio-image {
-  float: left;
-  margin-right: 20px;
+ 
 }
 #text-container {
   overflow: auto;
@@ -83,6 +82,9 @@ hr {
   margin-bottom: 30px;
 }
 #kobe-bio-image {
+  float: left;
+  margin-right: 20px;
+  margin-top: 60px;
   width: 400px;
   height: 400px;
   border-radius: 50%;
