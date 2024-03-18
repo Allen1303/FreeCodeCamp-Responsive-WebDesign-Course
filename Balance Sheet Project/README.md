@@ -4,7 +4,7 @@ This file explains the code for the Balance Sheet project, the skills you can le
 
 ## Skills Learned:
 
-### HTML Basics: 
+#### HTML Basics: 
 Creating the basic structure of the webpage using `HTML` elements like tables, headings, and sections.
 `CSS Fundamentals`: Applying styles to the `HTML` elements using CSS selectors and properties to control layout, font, color, and more.
 Responsive Design Concepts: Implementing basic media queries to adjust the layout for different screen sizes.
@@ -12,7 +12,7 @@ Document Accessibility: Using semantic `HTML` elements and techniques like aria-
 
 ## CSS Skills:
 
-### Pseudo-selectors:
+#### Pseudo-selectors:
 :first-of-type and :last-of-type target the first and last child elements of a specific selector (used for styling the company name and balance sheet title).
 `:not()` targets elements that don't match a specific selector (used for general table styling).
 `:nth-of-type()` targets specific elements based on their order among siblings (used for adding a right padding to the last data column in the total row).
@@ -23,7 +23,7 @@ Responsive Design Media Queries: Adjust layout and styles for different screen s
 
 Code Snippet - Using Pseudo Selectors for Table Styling:
 
-### This code snippet demonstrates how pseudo-selectors are used to style the table's total row:
+#### This code snippet demonstrates how pseudo-selectors are used to style the table's total row:
 
 ```css
 /* Targets the "total" class rows and adds a double border to the bottom */
