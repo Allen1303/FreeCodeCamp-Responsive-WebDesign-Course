@@ -71,4 +71,4 @@ This code demonstrates a descendant selector. It targets all div elements that a
 
 ## Acknowledgements:
 
-A big thanks to `FreeCodeCamp` (https://www.freecodecamp.org/) for providing resources and tutorials that help to create this project. `FreeCodeCamp` offers a fantastic platform for beginners to learn and practice essential web development skills!
+A big thanks to `FreeCodeCamp` (https://www.freecodecamp.org/) for providing resources and tutorials that help to create this project. `FreeCodeCamp` offers a fantastic platform for beginners to learn and practice essential web development skill
