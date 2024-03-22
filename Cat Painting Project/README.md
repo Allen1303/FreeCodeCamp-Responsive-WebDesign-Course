@@ -1,17 +1,22 @@
 ![Cat Painting Project](cat_painting_image1.png)
+
 # Cat Painting Project Readme
+
 This readme explains the HTML and CSS code used to create a cute cat painting illustration. By following along and building this project, you'll learn valuable web development skills!
 
 ## Skills Learned:
 
 ### HTML Basics:
+
 Creating the basic structure of the webpage using HTML elements like divs for sections and styling with classes.
 
 ### CSS Fundamentals:
+
 Applying styles to `HTML elements` using` CSS selectors` and properties to control layout, size, color, positioning, and more.
 Using basic transformations like rotate and transform to position and tilt elements.
 
 ### Descendant Selectors:
+
 Targeting specific elements nested within other elements using the child > or descendant operators in CSS selectors.
 Code Breakdown:
 
@@ -61,8 +66,9 @@ The transform property allows you to manipulate the position, size, and shape of
   border-radius: 190%/190px 150px 0 0;
 }
 ```
+
 This code demonstrates a descendant selector. It targets all div elements that are nested within (children of) the element with the class cat-mouth. The div elements represent the two lines forming the mouth. They are styled with` width, height, border,` and a specific border-radius to create the curved mouth shape.
 
 ## Acknowledgements:
 
-A big thanks to `FreeCodeCamp` (https://www.freecodecamp.org/) for providing resources and tutorials that helped create this project. `FreeCodeCamp` offers a fantastic platform for beginners to learn and practice essential web development skills!
+A big thanks to `FreeCodeCamp` (https://www.freecodecamp.org/) for providing resources and tutorials that help to create this project. `FreeCodeCamp` offers a fantastic platform for beginners to learn and practice essential web development skills!
