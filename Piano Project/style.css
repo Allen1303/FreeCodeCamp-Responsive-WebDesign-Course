@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+  background-image: url(images/piano_cover_image.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+
+}
+#piano {
+  position: relative;
+  border-radius: 15px;
+  background-color: rgba(121, 103, 70, 0.863);
+  width: 992px;
+  height: 290px;
+  margin: 80px auto;
+  padding: 90px 20px 0 20px; /* The padding: 90px 20px 0 20px; styling sets the padding of an element. The values 90px and 20px represent the top and bottom padding respectively, while the 0 represents the right padding and the second 20px represents the left padding.*/
+}
+.keys {
+  background-color: #04040460;
+  width: 949px;
+  height: 180px;
+  padding-left: 2px;
+  overflow: hidden;
+}
+.key {
+  background-color: #ffffffb5;
+  width: 41px;
+  height: 175px;
+  position: relative;
+  margin: 2px;
+  float: left;
+  border-radius: 0 0 5px 5px;
+}
+.key.black--key::after {
+  background-color: #1d1e22ef;
+  content: "";
+  position: absolute;
+  left: -18px;
+  width: 32px;
+  height: 100px;
+  border-radius: 0 0 5px 5px;
+}
+.logo {
+  width: 200px;
+  position: absolute;
+  top: 23px;
+}
+@media (max-width: 768px) {
+  #piano {
+    width: 358px;
+  }
+  .keys {
+    width: 318px;
+  }
+  .logo {
+    width: 150px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1199px) {
+  #piano {
+    width: 675px;
+  }
+  .keys {
+    width: 633px;
+  }
+}
