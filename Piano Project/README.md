@@ -92,7 +92,7 @@ div class="key": Each div with this class represents a single white piano key.
 </div>
 ```
 
-The piano keys are created using multiple `div elements` with classes key and `black--key`. Here's what this achieves:
+#### The piano keys are created using multiple `div elements` with classes key and `black--key`. Here's what this achieves:
 
 The element with class key represents a white piano key.
 The element with classes key `black--key` represents a black piano key. An additional black pseudo-element is styled using CSS to create the dark key on top of the white key element. 4. `Media Queries for Responsiveness:`
@@ -110,7 +110,7 @@ The element with classes key `black--key` represents a black piano key. An addit
   }
 }
 ```
-#### This code demonstrates a `media query` that adjusts the layout for smaller screens `(less than 768px wide)`. It reduces the width of the piano container (#piano), the piano keys container (keys), and the logo (logo) to ensure they fit well on smaller devices.
+ This code demonstrates a `media query` that adjusts the layout for smaller screens `(less than 768px wide)`. It reduces the width of the piano container (#piano), the piano keys container (keys), and the logo (logo) to ensure they fit well on smaller devices.
 
 ## Acknowledgement:
 
