@@ -1,0 +1,132 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+* {
+  font-family: "Montserrat", sans-serif; /* Set the font family for all elements to Montserrat */
+}
+header {
+  font-size: 24px; /* Set the font size for the header element to 24 pixels */
+  font-weight: 500; /* Set the font weight for the header element to 500 */
+  padding: 12px 10px;
+  display: block;
+}
+/* Basic styling for the navbar */
+#navbar {
+  position: fixed; /* Set the position of the navbar to fixed */
+  left: 0; /* Align the navbar to the left */
+  top: 0; /* Align the navbar to the top */
+  width: 350px; /* Set the width of the navbar to 350 pixels */
+  height: 100%; /* Set the height of the navbar to 100% */
+  background-color: rgba(247, 246, 246, 0.746); /* Set the background color of the navbar */
+  color: #1a1919; /* Set the text color of the navbar */
+  padding: 20px; /* Add padding to the navbar */
+  box-sizing: border-box; /* Include padding and border in the total width and height of the navbar */
+  overflow-y: auto; /* Enable vertical scrolling for the navbar */
+}
+/* Styles for the scrollbar */
+#navbar::-webkit-scrollbar {
+  width: 10px;
+}
+#navbar::-webkit-scrollbar-thumb {
+  background-color: rgba(230, 231, 234, 0.633);
+  border-radius: 12px;
+}
+#navbar::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(220, 222, 227, 0.809);
+}
+/* Styles for the header in the navbar */
+#navbar header {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 25px 10px;
+  background-color: rgba(220, 222, 227, 0.809);
+  border: none;
+  border-radius: 12px;
+}
+/* Styles for the navigation links */
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin: 5px 0;
+  border: 0.5px solid lightgray;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+  transition: background-color 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+/* Add hover effect for the navigation links */
+.nav-link:hover,
+.nav-link:focus {
+  background-color: rgba(220, 222, 227, 0.809);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+#main-doc {
+  margin: 30px 370px;
+  padding: 20px;
+  /* box-sizing: border-box; */
+  line-height: 1.6;
+}
+#main-doc header{
+    text-align: left;
+    margin: 0px;
+}
+code {
+  color: green;
+  font-size: 15px;
+  font-family: "Space Mono", monospace;
+  background-color: rgba(240, 241, 244, 0.809);
+  padding: 15px;
+  border: 0.8px solid #ccc;
+  border-radius: 10px;
+  display: block;
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+.main-section {
+  margin-left: 20px;
+}
+p {
+  font-size: 16px;
+}
+li {
+  list-style-type: none;
+  padding: 8px 5px;
+}
+/* Additonal Responsiveness*/
+@media screen and(max-width:768px) {
+  #navbar {
+    width: 100%;
+    position: static;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+  }
+  #main-doc {
+    margin: 30px 0;
+    padding: 20px 10px;
+  }
+  header {
+    font-size: 16px;
+  }
+  .navbar-link {
+    padding: 8px;
+    margin: 3px;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    font-size: 14px;
+  }
+  #main-doc::-webkit-scrollbar {
+    width: 8px;
+  }
+  #main-doc::-webkit-scrollbar-thumb {
+    background-color: rgba(230, 231, 234, 0.633);
+    border-radius: 12px;
+  }
+  #main-doc::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(220, 220, 227, 0.809);
+  }
+}
