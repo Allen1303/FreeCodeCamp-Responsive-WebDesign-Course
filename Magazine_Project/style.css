@@ -117,3 +117,98 @@ Much like Flexbox, with CSS Grid you can align the content of grid items with al
 .quote::after {
   content: ' "';
 }
+.text-with-images {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
+  margin-bottom: 3rem;
+}
+.lists {
+  list-style-type: none;
+  margin-top: 2rem;
+}
+.lists li {
+  margin-bottom: 1.5rem;
+}
+.list-title,
+.list-subtitle {
+  color: #00beef;
+}
+/*This will give our grid rows that adjust in height based on the content, but columns that remain a fixed width based on the container.
+
+The gap property is a shorthand way to set the value of column-gap and row-gap at the same time. If given one value, it sets the column-gap and row-gap both to that value. If given two values, it sets the row-gap to the first value and the column-gap to the second.
+
+The place-items property can be used to set the align-items and justify-items values at the same time. The place-items property takes one or two values. If one value is provided, it is used for both the align-items and justify-items properties. If two values are provided, the first value is used for the align-items property and the second value is used for the justify-items property.
+*/
+.image-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, min-content);
+  gap: 2rem;
+  place-items: center;
+}
+.image-1,
+.image-3 {
+  grid-column: 1/-1; /*This will allow the first and third images to span the full width of the grid.*/
+}
+/*==========Making the Magazine Layout Responsive=======*/
+@media only screen and (max-width: 720px) {
+  .image-wrapper {
+    grid-template-columns: 1fr; /*This will collapse the three images into one column on smaller screens.*/
+  }
+  main {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+    row-gap: 3rem;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media only screen and(max-width: 600px) {
+  .text-with-images {
+    grid-template-columns: 1fr;
+  }
+  main {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+    row-gap: 3rem;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+@media only screen and(max-width: 550px) {
+  .hero-title {
+    font-size: 6rem;
+  }
+
+  .hero-subtitle,
+  .author,
+  .quote,
+  .list-title {
+    font-size: 1.8rem;
+  }
+  .social-icons {
+    font-size: 2rem;
+  }
+  .text {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .hero-title {
+    font-size: 4.5rem;
+  }
+  main {
+    display: grid;
+    grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+    row-gap: 3rem;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
