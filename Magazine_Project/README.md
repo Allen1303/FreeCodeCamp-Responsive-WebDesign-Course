@@ -1,5 +1,6 @@
 ![FreeCodCamp Responsive WebDesign HTML](images/magazine_image.jpg)
-# Magazine Project: Learning Basic CSS
+# Magazine Project:
+### Learning CSS Grid and Responsive Design
 This project allows you to learn and practice fundamental CSS skills to create a magazine-like layout with a responsive design.
 
 ## Table of Contents
