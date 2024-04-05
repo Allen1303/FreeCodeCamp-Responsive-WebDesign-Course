@@ -22,15 +22,98 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 a {
   text-decoration: none;
   color: linen;
 }
 /* CSS Grid offers a two-dimensional grid-based layout, allowing you to center items horizontally and vertically while still retaining control to do things like overlap elements.*/
-main{
-    
-    display: grid;
-    grid-template-columns:minmax(2rem, 1fr)  minmax( min-content, 94rem) minmax(2rem, 1fr);
+main {
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(min-content, 94rem) minmax(2rem, 1fr);
+  row-gap: 3rem;
+}
+/*grid-column property to 2 / 3. This will tell the .heading element to start at grid line 2 and end at grid line 3.
+CSS repeat() function is used to repeat a value, rather than writing it out manually, and is helpful for grid layouts.*/
+img {
+  width: 100%;
+  object-fit: cover;
+}
+hr {
+  margin: 1.5rem 0;
+  border: 1px solid rgba(120, 120, 120, 0.6);
+}
+.heading {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1.5rem;
+}
+/*.text element is not a CSS Grid, but you can create columns within an element without using Grid by using the column-width property.*/
+.text {
+  grid-column: 2/3;
+  font-size: 1.8rem;
+  letter-spacing: 0.6px;
+  column-width: 25rem;
+  text-align: justify; /*make your project look like a printed magazine, the text-align property set to justify. will provide that effect*/
+}
+.hero {
+  grid-column: 1/-1;
+  position: relative;
+}
+/*The object-fit property tells the browser how to position the element within its container*/
+.hero-title {
+  text-align: center;
+  color: orangered;
+  font-size: 8rem;
+}
+.hero-subtitle {
+  font-size: 3rem;
+  color: orangered;
+  text-align: center;
+}
+.author {
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+}
+.author-name a:hover {
+  background-color: #306203;
+}
+.publish-date {
+  color: rgba (255, 255, 255, 0.5);
+}
+/*The default settings for CSS Grid will create additional rows as needed, unlike Flexbox.*/
+/* The grid-template-columns property is set to repeat(5, 1fr), which creates 5 equal-width columns in the grid. 
+to create additional columns. As an alternative, you can use the grid-auto-flow property.
+This property takes either row or column as the first value, with an optional second value of dense. grid-auto-flow uses an auto-placement algorithm to adjust the grid layout. Setting it to column will tell the algorithm to create new columns for content as needed.
+
+Much like Flexbox, with CSS Grid you can align the content of grid items with align-items and justify-items. align-items will align child elements along the column axis, and justify-items will align child elements along the row axis.
+*/
+.social-icons {
+  display: grid;
+  font-size: 3rem;
+  grid-template-columns: repeat(5, 1fr); /*This unit represents a fractional unit of available space. It's a flexible unit that divides the available space evenly among items using it.*/
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  align-items: center;
+}
+/*::first-letter pseudo-selector allows you to target the first letter in the text content of an element.*/
+.first-paragraph::first-letter {
+  font-size: 6rem;
+  color: orangered;
+  float: left;
+  margin-right: 1rem;
+}
+.quote {
+  color: #00beef;
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+.quote::before {
+  content: '" ';
+}
+.quote::after {
+  content: ' "';
 }
