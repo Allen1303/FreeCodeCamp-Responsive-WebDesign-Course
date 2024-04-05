@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%; /*This will set the default font size for your web page to 10px (the browser default is 16px).*/
+}
+body {
+  font-family: Baskervville, serif;
+  color: linen;
+  background-color: rgb(20, 30, 40);
+}
+h1 {
+  font-family: Anton, sans-serif;
+}
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Raleway, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: linen;
+}
+/* CSS Grid offers a two-dimensional grid-based layout, allowing you to center items horizontally and vertically while still retaining control to do things like overlap elements.*/
+main{
+    
+    display: grid;
+    grid-template-columns:minmax(2rem, 1fr)  minmax( min-content, 94rem) minmax(2rem, 1fr);
+}
