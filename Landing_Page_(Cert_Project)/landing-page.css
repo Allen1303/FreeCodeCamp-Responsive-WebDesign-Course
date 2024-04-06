@@ -1,13 +1,104 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: rgb(241, 237, 237);
+}
 #header-img {
   width: 300px;
   height: auto;
+  top: 25px;
 }
-
-.nav-link {
-  text-decoration: none;
+#header {
+  display: flex;
+  justify-content: space-between; /* Align logo and nav links at the start and end of the header */
+  align-items: center; /* Vertically center align items */
+  padding: 10px 40px;
+}
+#nav-bar {
+  position: fixed;
+  top: 25px;
+  right: 0;
+}
+#nav-bar ul {
   display: flex;
   justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove default list style */
+}
+#nav-bar ul li {
+  margin-right: 50px;
+}
+.nav-link {
+  text-decoration: none;
+  padding: 30px 40px;
+  font-size: 16px;
+  color: black;
+  font-weight: 450;
+}
+
+/* 
+.hero {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-top: 50px;
+} */
+.hero {
+  text-align: center; /* Center align content */
+}
+
+#form {
+  display: inline-block; /* Display the form as inline-block */
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  width: 15%;
+}
+
+#email {
+  width: 120%;
+  text-align: center;
+  padding: 5px 0;
+
+  border-radius: 5px;
+}
+
+#submit {
+  align-items: center;
+  width: 55%;
+  display: block; /* Display the submit button as block to make it occupy full width */
+  margin: 10px auto; /* Center the submit button */
+  text-align: center;
+  justify-content: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  background-color: lightsalmon;
+}
+/*======MEDIA QUERY STYLING FOR RESPONSIVENESS=====*/
+@media only screen and (max-width: 768px) {
+  #header-img {
+    width: 150px; /* Further reduce image width */
+  }
+
+  #header {
+    padding: 10px; /* Reduce padding */
+  }
+
+  #nav-bar ul li {
+    margin-right: 20px; /* Further reduce margin between links */
+  }
+
+  .nav-link {
+    padding: 8px 16px; /* Further adjust padding */
+    font-size: 14px; /* Further reduce font size */
+  }
 }
