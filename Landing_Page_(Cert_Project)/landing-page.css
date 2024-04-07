@@ -9,96 +9,350 @@ body {
   background-color: rgb(241, 237, 237);
 }
 #header-img {
-  width: 300px;
-  height: auto;
-  top: 25px;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
 }
 #header {
+  position: fixed; /* Make the header fixed */
+  top: 0px; /* Position the header at the top of the page */
+  width: 100%; /* Set the width to 100% */
   display: flex;
-  justify-content: space-between; /* Align logo and nav links at the start and end of the header */
-  align-items: center; /* Vertically center align items */
-  padding: 10px 40px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(241, 237, 237); /* Add background color to navbar */
+  padding: 10px 40px; /* Add padding to the header */
+  z-index: 100; /* Ensure the navbar stays on top of other elements */
 }
+
+.logo {
+  max-width: 250px; /* Set maximum width for the logo */
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
 #nav-bar {
-  position: fixed;
-  top: 25px;
-  right: 0;
+  font-weight: 400;
 }
-#nav-bar ul {
+
+ul {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  justify-content: space-around;
   padding: 0;
   margin: 0;
-  list-style-type: none; /* Remove default list style */
+  list-style-type: none;
 }
-#nav-bar ul li {
-  margin-right: 50px;
-}
+
 .nav-link {
   text-decoration: none;
-  padding: 30px 40px;
-  font-size: 16px;
+  padding: 10px; /* Adjust padding for responsiveness */
+  font-size: 16px; /* Adjust font size for responsiveness */
   color: black;
-  font-weight: 450;
+  font-weight: 500;
+  margin-right: 30px; /* Add right margin for spacing */
 }
 
-/* 
-.hero {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  margin-top: 50px;
-} */
-.hero {
+.nav-link:hover,
+.nav-link:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  text-decoration-color: darkorange;
+  text-decoration-thickness: 2px;
+  transition: text-decoration 0.3s ease;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#hero {
   text-align: center; /* Center align content */
+  margin-top: 130px;
+}
+#hero h2 {
+  display: inline-block; /* Make the span inline-block to center text */
+  vertical-align: middle;
+  margin-bottom: 20px;
+  font-weight: 505;
 }
 
-#form {
-  display: inline-block; /* Display the form as inline-block */
+#hero #form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero input[type="email"] {
+  max-width: 275px;
+  min-width: 100px;
+  width: 275px;
+  height: 30px;
+  border-radius: 6px;
+  padding: 4px 4px;
+  margin-bottom: 10px;
+}
+
+#hero input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 30px;
+  border-radius: 6px;
+  border: none;
+  background-color: darkorange;
+  font-weight: bold;
+  padding: 4px 4px;
+  margin-bottom: 80px;
+  box-shadow: 0 0 10px rgba(146, 144, 144, 0.3);
+}
+#hero input[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgb(242, 207, 163);
+  color: darkorange;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(146, 144, 144, 0.3);
+}
+.container {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
-  width: 15%;
+  margin-top: 20px;
+}
+#features {
+  display: flex;
+  flex-direction: column;
+}
+.grid {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  flex-direction: row;
 }
 
-#email {
-  width: 120%;
-  text-align: center;
-  padding: 5px 0;
-
-  border-radius: 5px;
+.icon .fa-solid {
+  margin-left: 80px; /* Add some left margin for spacing */
+  font-size: 3em;
+  color: darkorange;
 }
 
-#submit {
+#features .icon {
+  display: flex; /* Use flexbox to align items horizontally */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center align items horizontally */
+  height: 125px;
+  width: 20vw; /* Set the width of the element relative to the viewport width */
+  color: darkorange;
+}
+
+.discription h3,
+.discription p {
+  /* margin: 0; */
+  width: 80%; /*Ensure the width of the text content fills the container */
+}
+#video {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 55%;
-  display: block; /* Display the submit button as block to make it occupy full width */
-  margin: 10px auto; /* Center the submit button */
-  text-align: center;
-  justify-content: center;
-  padding: 5px 0;
-  border-radius: 5px;
-  background-color: lightsalmon;
+  margin-top: 20px;
 }
+/*======PROFUCT CARD STYLING=======*/
+#pricing {
+  margin-top: 60px; /* Adds top margin of 60 pixels to the element with id "pricing" */
+  display: flex; /* Displays the element as a flex container */
+  justify-content: center; /* Centers the flex items horizontally */
+  text-align: center; /* Centers the text content horizontally */
+  display: flex; /* Redundant declaration, can be removed */
+  width: 65%; /* Sets the width of the element to 65% of its container */
+}
+
+.product {
+  display: flex; /* Displays the element as a flex container */
+  flex-direction: column; /* Sets the flex items to be stacked vertically */
+  align-items: center; /* Centers the flex items vertically */
+  text-align: center; /* Centers the text content horizontally */
+  width: calc(100% / 3); /* Sets the width of the product card to one-third of its container */
+  margin: 10px; /* Adds margin of 10 pixels to all sides of the element */
+  border: 1px solid rgb(71, 70, 70); /* Adds a 1 pixel solid black border to the element */
+  border-radius: 6px; /* Adds a border radius of 5 pixels to the element */
+  box-shadow: 0 0 15px 0 rgba(134, 133, 133, 0.5);
+}
+
+.product .level {
+  background-color: rgb(227, 225, 225); /* Sets the background color of the element to a light gray */
+  font-weight: bold; /* Sets the font weight of the element to bold */
+  width: 100%; /* Sets the width of the element to 100% of its container */
+  padding: 15px 0; /* Adds padding of 15 pixels to the top and bottom of the element */
+}
+
+.product > h2 {
+  margin-top: 15px;
+}
+
+.product ol {
+  padding: 20px; /* Adjust padding for the list */
+}
+
+.product ol li {
+  padding: 5px 0;
+  list-style-type: none;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: darkorange;
+  color: white;
+  font-weight: 525;
+  font-size: large;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(146, 144, 144, 0.3);
+}
+.btn:hover,
+btn:focus {
+  background-color: rgb(242, 207, 163);
+  color: rgb(155, 89, 9);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px rgba(146, 144, 144, 0.3);
+}
+
+/*======FOOTER STYLING=======*/
+footer {
+  display: block;
+  margin-top: 30px;
+  background-color: rgb(227, 225, 225);
+  padding: 20px;
+  width: 64%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+footer > ul > li {
+  padding: 0 10px;
+  list-style: none;
+  display: list-item;
+  text-align: --webkit-match-parent;
+  color: black;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  font-size: 0.98em;
+}
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+  text-decoration-color: darkorange;
+  text-decoration-thickness: 2px;
+  transition: text-decoration 0.3s ease;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  cursor: pointer;
+}
+footer > span {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+
 /*======MEDIA QUERY STYLING FOR RESPONSIVENESS=====*/
+
+/* Media query for screens smaller than 768px */
 @media only screen and (max-width: 768px) {
-  #header-img {
-    width: 150px; /* Further reduce image width */
+  .logo {
+    max-width: 80vw; /* Adjust logo width for smaller screens */
   }
 
-  #header {
-    padding: 10px; /* Reduce padding */
-  }
-
-  #nav-bar ul li {
-    margin-right: 20px; /* Further reduce margin between links */
+  #nav-bar {
+    display: none; /* Hide navigation bar on smaller screens */
   }
 
   .nav-link {
-    padding: 8px 16px; /* Further adjust padding */
-    font-size: 14px; /* Further reduce font size */
+    padding: 15px 20px; /* Adjust padding for navigation links */
+  }
+
+  #nav-bar {
+    width: 100%; /* Set navigation bar width to full */
+    display: flex;
+    justify-content: center; /* Center align navigation links */
+    margin-top: 20px; /* Add top margin for spacing */
+  }
+
+  .nav-link {
+    padding: 15px 20px; /* Adjust padding for navigation links */
+    margin: 0 10px; /* Add margin between navigation links */
+  }
+  #hero {
+    text-align: center; /* Center align content */
+    margin-top: 130px;
+  }
+  #hero h2 {
+    font-size: 24px; /* Decrease font size for hero heading */
+  }
+
+  #hero input[type="email"] {
+    max-width: 90%; /* Adjust input width for smaller screens */
+  }
+
+  #hero input[type="submit"] {
+    width: 90%; /* Adjust button width for smaller screens */
+    margin-bottom: 20px; /* Decrease margin bottom for button */
+  }
+
+  .icon .fa-solid {
+    margin-left: 40px; /* Adjust icon margin for smaller screens */
+    font-size: 2.5em; /* Decrease icon size for smaller screens */
+  }
+
+  #features .icon {
+    width: 25vw; /* Adjust icon width for smaller screens */
+  }
+
+  #features {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    flex-direction: row;
+  }
+
+  .icon .fa-solid {
+    margin-left: 40px; /* Add some left margin for spacing */
+    font-size: 2.5em;
+    color: darkorange;
+  }
+
+  #features .icon {
+    display: flex; /* Use flexbox to align items horizontally */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center align items horizontally */
+    height: 125px;
+    width: 20vw; /* Set the width of the element relative to the viewport width */
+    color: darkorange;
+  }
+
+  .product {
+    width: 90%; /* Adjust product card width for smaller screens */
+  }
+
+  footer {
+    width: 90%; /* Adjust footer width for smaller screens */
   }
 }
