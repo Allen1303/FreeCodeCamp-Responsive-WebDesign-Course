@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --navbar-color: rgba(220, 20, 60, 0.863);
+  --primary-text-color: whitesmoke;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+#nav-bar {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the end of the flex container (right side) */
+  padding: 15px; /* Add padding to create space around the links */
+  background-color: var(--navbar-color);
+}
+
+.nav-list {
+  list-style-type: none; /* Removes default bullet points */
+  display: flex; /* Displays list items as flex items */
+  gap: 45px; /* Add some space between each link */
+  margin: 10px;
+  padding-right: 30px; /* Add padding to the right edge of the page*/
+}
+.nav-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.nav-link:hover,
+.nav-link:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.6rem;
+  text-decoration-thickness: 2px;
+  transition: text-decoration 0.0s, background-color 0.0s, border-radius 0.0s, box-shadow 0.0s; /* Combined transition properties */
+  background-color: var(--primary-text-color);
+  color: var(--navbar-color);
+  padding: 5px;
+  border-radius: 5px; /* Adjusted border-radius */
+  cursor: pointer;
+}
+
+/*========MEDIA QUERY STYLING=======*/
+@media screen and(max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
