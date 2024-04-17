@@ -49,12 +49,6 @@ body {
   cursor: pointer;
 }
 
-/*========MEDIA QUERY STYLING=======*/
-@media screen and(max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-}
 .about_section {
   display: flex;/* makes the container a flex container.*/
   flex-direction: column;/*arranges the child elements in a column*/
@@ -74,4 +68,11 @@ font-style: italic;
 color: var(--navbar-color);
 font-size: 1.5rem;
 
+}
+
+/*========MEDIA QUERY STYLING=======*/
+@media screen and(max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 }
