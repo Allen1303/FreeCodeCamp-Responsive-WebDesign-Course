@@ -62,8 +62,9 @@ hr {
   display: grid;
   place-items: center;
 }
-#kobe-bio-image {
- 
+#img-caption{
+ align-items: center;
+ width: 85%;
 }
 #text-container {
   overflow: auto;
