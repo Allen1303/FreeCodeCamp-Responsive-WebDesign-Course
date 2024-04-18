@@ -116,6 +116,7 @@ a {
   padding: 1.5rem 0.5rem;
 }
 .project_code {
+  font-size: 1.3rem;
   font-weight: 600;
   color: var(--about-section-color);
   transition: color 0.3s ease-out;
@@ -124,11 +125,22 @@ a {
   color: var(--navbar-color);
 }
 .btn {
-  display: block;
-  padding: 1rem 2rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.5rem 0.4rem 0.8rem;
+  background-color: var(--about-section-color);
+  color: var(--primary-text-color);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  margin-top: 3rem;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
-.show_more_btn {
-  font-size: 1.2rem;
-  background: var(--about-section-color);
-  margin-top: 2rem;
+.bx-chevron-right {
+  font-size: 2.5rem;
+  color: var(--primary-text-color);
+}
+.btn:hover {
+  background-color: var(--navbar-color);
+  transition: 0.3s ease;
 }
