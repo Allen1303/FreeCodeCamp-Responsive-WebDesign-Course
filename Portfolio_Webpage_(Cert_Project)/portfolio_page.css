@@ -6,10 +6,10 @@
   box-sizing: border-box;
 }
 :root {
-  --navbar-color: rgba(239, 45, 84, 0.926);
+  --primary-bg-color: rgba(239, 45, 84, 0.926);
   --primary-text-color: rgba(245, 245, 245, 0.977);
-  --about-section-color: #2c2a2a;
-  --project-section-bg-color: rgb(220, 215, 215);
+  --secondary-bg-color: #303841;
+  --project-section-color: rgb(220, 215, 215);
 }
 
 body {
@@ -20,7 +20,7 @@ body {
   display: flex;
   justify-content: flex-end; /* Aligns items to the end of the flex container (right side) */
   padding: 15px; /* Add padding to create space around the links */
-  background-color: var(--navbar-color);
+  background-color: var(--primary-bg-color);
   position: fixed; /*This positions the element relative to the viewport, so it will remain fixed in place even when scrolling.*/
   top: 0; /*This ensures that the nav-bar is fixed to the top of the viewport.*/
   width: 100%; /*This ensures that the nav-bar spans the entire width of the viewport.*/
@@ -45,7 +45,7 @@ body {
   text-decoration-thickness: 2px;
   transition: text-decoration 0s, background-color 0s, border-radius 0s, box-shadow 0s; /* Combined transition properties */
   background-color: var(--primary-text-color);
-  color: var(--navbar-color);
+  color: var(--primary-bg-color);
   padding: 5px;
   border-radius: 5px; /* Adjusted border-radius */
   cursor: pointer;
@@ -67,8 +67,8 @@ body {
 }
 .about_section > p {
   font-style: italic;
-  color: var(--navbar-color);
-  font-size: 1.5rem;
+  color: var(--primary-bg-color);
+  font-size: 1.3rem;
 }
 .my_work_section {
   text-align: center;
@@ -83,8 +83,8 @@ body {
   margin: 30px 0 50px;
 }
 .project {
-  background: var(--about-section-color);
-  box-shadow: 1px 1px 2px, var(--about-section-color) 0.5;
+  background: var(--secondary-bg-color);
+  box-shadow: 1px 1px 2px, var(--secondary-bg-color) 0.5;
   border-radius: 0.5rem;
 }
 .projects_grid {
@@ -98,14 +98,14 @@ body {
 .project_image {
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 25px var(--about-section-color); /* Apply a box shadow to the images */
+  box-shadow: 0 20px 25px var(--secondary-bg-color); /* Apply a box shadow to the images */
   border-radius: 0.5rem 0.5rem 0 0; /* Add border radius to images */
 }
 img {
   border-radius: 0.5rem; /* Add border radius to the portfolio images */
   width: 420px; /* Set the width of the images */
   height: 350px; /* Set the height of the images */
-  border-bottom: 3rem var(--about-section-color);
+  border-bottom: 3rem var(--secondary-bg-color);
 }
 a {
   text-decoration: none;
@@ -118,17 +118,17 @@ a {
 .project_code {
   font-size: 1.3rem;
   font-weight: 600;
-  color: var(--about-section-color);
+  color: var(--secondary-bg-color);
   transition: color 0.3s ease-out;
 }
 .project_title:hover .project_code {
-  color: var(--navbar-color);
+  color: var(--primary-bg-color);
 }
 .btn {
   display: inline-flex;
   align-items: center;
-  padding: 0.4rem 0.5rem 0.4rem 0.8rem;
-  background-color: var(--about-section-color);
+  padding: 0.8rem 0.8rem 0.8rem 0.8rem;
+  background-color: var(--secondary-bg-color);
   color: var(--primary-text-color);
   font-weight: bold;
   text-decoration: none;
@@ -136,11 +136,44 @@ a {
   margin-top: 3rem;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
 }
-.bx-chevron-right {
-  font-size: 2.5rem;
+.fa-chevron-right {
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
   color: var(--primary-text-color);
 }
 .btn:hover {
-  background-color: var(--navbar-color);
+  background-color: var(--primary-bg-color);
   transition: 0.3s ease;
+}
+.contact_section {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%;
+  height: 70vh; */
+  background-color: var(--secondary-bg-color);
+}
+
+.contact_section h1 {
+  font-size: 3.5rem;
+  color: var(--primary-text-color);
+  margin-bottom: 0.8rem;
+}
+.contact_section p {
+  font-weight: 200;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+  margin-bottom: 3rem;
+}
+.contact_details {
+  margin-left: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.footer_section {
+  margin-top: 0.5rem solid var(--primary-bg-color);
 }
